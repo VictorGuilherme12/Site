@@ -1,8 +1,8 @@
 let time = 2500,
     currentImageIndex = 0,
     images = document
-                .querySelectorAll("#slider img")
-    max = images.length;
+        .querySelectorAll("#slider img")
+max = images.length;
 
 function nextImage() {
 
@@ -11,8 +11,8 @@ function nextImage() {
 
     currentImageIndex++
 
-    if(currentImageIndex >= max)
-    currentImageIndex = 0
+    if (currentImageIndex >= max)
+        currentImageIndex = 0
 
     images[currentImageIndex]
         .classList.add("selected")
