@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+Body {
+    background-color: #6a7dd6;
+    color: #ededed;
+    display: flex;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ccd7e7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.navbar a {
+    font-size: 22px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover,
+.nabar a.active{
+    color: #000;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    z-index: 2;
+}
+.home-content {
+    max-width: 600px;
+    position: relative;
+    left: 1%;
+}
+
+.section {
+    left: 1px;
+}
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #214495;
+}
+
+.home-content p {
+    font-size: 23px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+
+   
+}
+.btn-box a {
+    position: relative;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100%;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color:#000;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #fff;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #000;
+}
+.btn-box a:nth-child(2):hover{
+    color: #fff;
+}
+.btn-box a:nth-child(2)::before {
+    background-color: #3f448c;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #3f448c;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+
+    width: 100%;
+}
+
+.media {
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+    width: 170px;
+    height: 50px;
+    background: #5a61bd;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media a {
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.media a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #6a7dd6;
+    z-index: -1;
+    transition: .5s;
+}
+
+.media a:hover::before {
+    width: 100%;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.About-content {
+    bottom: 50%;
+
+}
+
+.About-content h3 {
+    bottom: 50%;
+}
+
+#slider {
+    width: 1000px;
+    height: 1000px;
+    max-width: 1500px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50px;
+    top: 10%;
+    left: 50%;
+    opacity: 100%;
+    display: flex;
+    
+}
+
+#slider img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 600ms;
+    border-radius: 50px;
+    border: 10px solid black;
+   
+
+}
+
+#slider img.selected {
+    opacity: 1;
+    
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    .section {
+        padding: 10rem 4% 2rem;
+    }
+
+    .home {
+        padding: 0 4%;
+    }
+}
+
+
