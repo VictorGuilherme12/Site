@@ -253,4 +253,38 @@ Body {
     }
 }
 
+.form {
+    text-align: center;
+    bottom: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    left: 45%;
+}
 
+form {
+    display: inline-block; /* Impede que o formulário ocupe toda a largura disponível */
+    text-align: left; /* Alinha o conteúdo do formulário à esquerda */
+    font-size: 30px;
+    border: solid 2px black;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+label,
+input {
+    display: block; /* Coloca cada label e input em uma nova linha */
+    margin-bottom: 10px; /* Adiciona algum espaçamento entre cada label e input */
+    width: 300px;
+    font-size: 40px;
+    height: 50px;
+}
+
+button {
+    margin-top: 10px; /* Adiciona algum espaçamento acima do botão */
+}
