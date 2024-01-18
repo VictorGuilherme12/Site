@@ -255,36 +255,54 @@ Body {
 
 .form {
     text-align: center;
-    bottom: 70%;
-    height: 100px;
+    bottom: 10%;
+    height: 800px;
     display: flex;
     justify-content: center;
     position: absolute;
     align-items: center;
-    left: 45%;
+    left: 40%;
+    
 }
 
 form {
     display: inline-block; /* Impede que o formulário ocupe toda a largura disponível */
     text-align: left; /* Alinha o conteúdo do formulário à esquerda */
     font-size: 30px;
-    border: solid 2px black;
-    width: 400px;
+    width: 500px;
     justify-content: center;
     align-items: center;
-    
+    border: solid 2px black; 
+    border-radius: 50px;
+    height: 500px;
+    background: gray;
+    bottom: 10%;
+    position: relative;
 
 }
 
 label,
 input {
     display: block; /* Coloca cada label e input em uma nova linha */
-    margin-bottom: 10px; /* Adiciona algum espaçamento entre cada label e input */
+    margin-bottom: 5px; /* Adiciona algum espaçamento entre cada label e input */
     width: 300px;
-    font-size: 40px;
+    font-size: 25px;
     height: 50px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+    position: relative;
 }
 
 button {
     margin-top: 10px; /* Adiciona algum espaçamento acima do botão */
+    left: 350px;
+    position: relative;
+    top: 10%;
 }
+
+input {
+    font-size: 20px;
+}
+
